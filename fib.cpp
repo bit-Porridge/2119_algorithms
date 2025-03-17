@@ -1,3 +1,6 @@
+#inlude <iostream>
+using namespace std;
+
 
 struct Matrix {
     int rows;
@@ -64,4 +67,11 @@ int fib(int n){
     T = T.fastpow(T,n-2);
     Matrix ans = T*base;
     return ans(0,0);
+}
+
+int main(){
+    int n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+    cout << "The " << n << "th Fibonacci number is: " << fib(n) << endl;
 }
